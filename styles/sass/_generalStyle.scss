@@ -1,0 +1,156 @@
+// general styles
+html {
+  font-size: 125%;
+}
+
+nav,
+ul,
+a,
+h1,
+h2,
+h3,
+form,
+button,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+nav,
+h1,
+h2,
+h3,
+form,
+button,
+input[type="submit"] {
+  font-family: $headerFont;
+}
+
+h1,
+h2,
+h3,
+input[type="submit"],
+button {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+a {
+  color: $black;
+}
+a:visited {
+  color: $black;
+}
+
+a:hover,
+a:focus {
+  color: $white;
+}
+
+.blogHeader h1,
+.contactHeader h1 {
+  line-height: 92px;
+  font-size: 4rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: $bodyFont;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+nav ul li {
+  list-style: none;
+  a {
+    text-decoration: none;
+  }
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+//general styles for main
+.mainSectionOne,
+.mainSectionTwo,
+.mainSectionFour,
+.blogSectionOne,
+.contactSectionOne {
+  background-color: $primary4;
+}
+
+.mainSectionThree,
+.mainSectionFive {
+  background: $white;
+}
+
+//button style
+button,
+input[type="submit"] {
+  padding: 10px 30px;
+  border: 1px transparent solid;
+  background: $black;
+  color: $accent;
+  line-height: 32px;
+}
+
+button:hover,
+button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background: $accent;
+  color: $black;
+}
+
+.burgerMenu {
+  font-size: 40px;
+  position: absolute;
+  top: -60px;
+  right: 40px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.burgerMenu:hover,
+.burgerMenu:focus {
+  color: $white;
+}
+
+// Horizontal Nav
+.burgerNav {
+  width: 20%;
+  min-width: 170px;
+  position: absolute;
+  right: 0;
+  top: 8vh;
+  z-index: 5;
+  height: 300px;
+  border: solid 1px $primary2;
+  background-color: rgba($color: #fff, $alpha: 0.8);
+  visibility: hidden;
+}
+
+.burgerNavShow {
+  visibility: visible;
+}
+
+.burgerNav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.burgerNav ul li a:hover,
+.burgerNav ul li a:focus {
+  color: $primary2;
+}

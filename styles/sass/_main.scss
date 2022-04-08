@@ -1,0 +1,232 @@
+// Header and Footer styles
+Header {
+  height: 60vh;
+  background-color: $primary3;
+}
+
+nav {
+  height: 8vh;
+  background-color: $primary3;
+  ul {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    li a {
+      line-height: 29px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+h2 {
+  font-size: 2.1rem;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  .title {
+    position: relative;
+    .titleImg {
+      width: 150px;
+      position: absolute;
+      top: -100px;
+      right: -50px;
+    }
+  }
+}
+
+.headerImg {
+  width: 35%;
+  min-width: 200px;
+  position: relative;
+  top: 40px;
+  box-shadow: 20px 20px 0 0 $white;
+}
+
+// Section One styling
+.sectionOneFlex {
+  height: 40vh;
+}
+
+.sectionOneFlex {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  h2 {
+    margin-top: 50px;
+  }
+  button {
+    margin-bottom: 50px;
+  }
+}
+
+//Section Two Styling
+h3 {
+  font-size: 1.6rem;
+}
+
+.sectionTwoFlex {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  justify-content: space-between;
+}
+.sectionTwoContent {
+  width: calc(50% - 200px);
+  position: relative;
+  margin-left: 100px;
+  margin-right: 50px;
+}
+
+.sectionTwoContent:nth-child(even) {
+  margin-right: 0;
+}
+
+.icon {
+  position: absolute;
+  left: -75px;
+  top: 0;
+  i {
+    border-radius: 50%;
+    background-color: $primary3;
+    padding: 10px;
+  }
+}
+
+// Section Three Styling
+
+.sectionThreeFlex {
+  display: flex;
+  flex-wrap: wrap;
+  img,
+  .textContainer {
+    width: 50%;
+  }
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.third,
+.fourth {
+  margin-top: 50px;
+}
+
+.first {
+  order: 0;
+  position: relative;
+  top: -30px;
+}
+
+.second {
+  padding-left: 100px;
+}
+
+.third {
+  order: 4;
+  position: relative;
+  bottom: -30px;
+}
+
+.fourth {
+  padding-right: 100px;
+  button {
+    align-self: flex-end;
+  }
+}
+
+.mainSectionThree {
+  position: relative;
+}
+
+.imgOneShadow,
+.imgTwoShadow {
+  width: 51%;
+  height: 45%;
+  position: absolute;
+}
+
+.imgOneShadow {
+  background-color: $primary2;
+  top: 0;
+}
+
+.imgTwoShadow {
+  background-color: $primary3;
+  right: 0;
+  top: 60%;
+  width: 49%;
+}
+
+//Section Four Styling
+
+.mainSectionFour img {
+  width: calc(35% - 100px);
+  box-shadow: 10px 10px 0 0 $primary1;
+}
+
+.sectionFourFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.sectionFourText {
+  margin-left: 100px;
+  width: 65%;
+}
+
+// Section Five Styling
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  img {
+    width: calc(33% - 20px);
+    margin-right: 20px;
+  }
+}
+
+.gallery img:last-child {
+  margin-right: 0;
+}
+
+//section footer style
+footer {
+  height: 5vh;
+  background-color: $black;
+  color: $white;
+  text-align: center;
+}
+
+footer p {
+  padding-top: 10px;
+  line-height: 0;
+  margin: 0;
+}

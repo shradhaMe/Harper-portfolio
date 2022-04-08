@@ -1,0 +1,124 @@
+.blogHeader,
+.contactHeader {
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  h1 {
+    position: absolute;
+    bottom: -40px;
+  }
+}
+
+.blogHeader {
+  background-image: url(../assets/blog-image-1.jpg);
+}
+
+//Blog section style
+.blogSectionOne {
+  padding-top: 100px;
+}
+
+.asideSection {
+  width: calc(30% - 40px);
+  margin-right: 40px;
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.aboutHarper,
+.recentPost,
+.blog,
+article {
+  background-color: $white;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+
+.aboutHarper {
+  margin-bottom: 40px;
+  h3 {
+    margin-top: 20px;
+  }
+}
+
+.recentPost {
+  height: 300px;
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    ul li {
+      font-size: 2px;
+    }
+  }
+}
+
+.recentPost a {
+  text-decoration: none;
+}
+
+.blogDisplay {
+  width: 70%;
+}
+
+.blogWrap {
+  display: flex;
+}
+
+.blog,
+article:last-child {
+  border-bottom: 5px solid $primary1;
+}
+
+article {
+  display: flex;
+  .profilePic {
+    width: 15%;
+  }
+}
+
+.comment {
+  width: calc(85% - 20px);
+  margin-left: 20px;
+}
+
+//form styling
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+  input[type="text"] {
+    width: calc(50% - 10px);
+    padding: 20px;
+  }
+}
+
+textarea,
+input[type="submit"] {
+  width: 100%;
+}
+
+input[type="text"]:first-child {
+  margin-right: 20px;
+}
+
+textarea {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+input[type="text"],
+textarea {
+  border: none;
+  background: $white;
+}
+
+::placeholder {
+  color: $black;
+  opacity: 1;
+}

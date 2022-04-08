@@ -710,3 +710,554 @@ footer p {
   line-height: 0;
   margin: 0;
 }
+
+.blogHeader,
+.contactHeader {
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.blogHeader h1,
+.contactHeader h1 {
+  position: absolute;
+  bottom: -40px;
+}
+
+.blogHeader {
+  background-image: url(../assets/blog-image-1.jpg);
+}
+
+.blogSectionOne {
+  padding-top: 100px;
+}
+
+.asideSection {
+  width: calc(30% - 40px);
+  margin-right: 40px;
+}
+.asideSection h3 {
+  font-size: 1.2rem;
+}
+
+.aboutHarper,
+.recentPost,
+.blog,
+article {
+  background-color: #ffffff;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+
+.aboutHarper {
+  margin-bottom: 40px;
+}
+.aboutHarper h3 {
+  margin-top: 20px;
+}
+
+.recentPost {
+  height: 300px;
+}
+.recentPost h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.recentPost h3 ul li {
+  font-size: 2px;
+}
+
+.recentPost a {
+  text-decoration: none;
+}
+
+.blogDisplay {
+  width: 70%;
+}
+
+.blogWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog,
+article:last-child {
+  border-bottom: 5px solid #227284;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+article .profilePic {
+  width: 15%;
+}
+
+.comment {
+  width: calc(85% - 20px);
+  margin-left: 20px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+form input[type=text] {
+  width: calc(50% - 10px);
+  padding: 20px;
+}
+
+textarea,
+input[type=submit] {
+  width: 100%;
+}
+
+input[type=text]:first-child {
+  margin-right: 20px;
+}
+
+textarea {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+input[type=text],
+textarea {
+  border: none;
+  background: #ffffff;
+}
+
+::-webkit-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #171717;
+  opacity: 1;
+}
+
+.contactHeader {
+  height: 40vh;
+  background-image: url(../assets/contact-img-1.jpg);
+}
+
+.contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.contactFlex ul li {
+  list-style: none;
+}
+.contactFlex aside {
+  width: calc(40% - 40px);
+  margin-right: 40px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 20px;
+  height: 350px;
+  padding-top: 40px;
+  padding-left: 40px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.contactFlex aside .contactForm {
+  width: 60%;
+}
+
+.socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 80%;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.socialMedia li a {
+  color: #227284;
+  padding-right: 40px;
+}
+
+.contactInfo li a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    max-width: 800px;
+  }
+
+  header {
+    height: 40vh;
+  }
+
+  .blogWrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .blogDisplay {
+    width: 100%;
+  }
+
+  .asideSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-right: 0;
+  }
+  .asideSection .aboutHarper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .asideSection .aboutHarper img {
+    width: calc(30% - 20px);
+    margin-right: 20px;
+  }
+
+  .aboutText {
+    width: 70%;
+  }
+
+  .recentPost {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 40px;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  .recentPost ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 40px;
+  }
+  .recentPost ul li {
+    width: 50%;
+  }
+
+  .contactFlex aside {
+    padding: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .wrapper {
+    width: 600px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .titleContainer .title .titleImg {
+    width: 100px;
+    top: -60px;
+    right: -25px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .contactFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 0;
+  }
+  .contactFlex aside {
+    margin-right: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 50px;
+  }
+  .contactFlex aside ul {
+    margin: 0;
+  }
+
+  .socialMedia {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 50%;
+  }
+  .socialMedia a {
+    font-size: 50px;
+  }
+
+  .contactInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .burgerMenu {
+    visibility: visible;
+  }
+
+  .mainUl li a {
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .mainSectionOne {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .sectionOneFlex {
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 80%;
+  }
+
+  .sectionTwoContent {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .sectionTwoContent:nth-child(2) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .sectionTwoContent:nth-child(3) {
+    margin-bottom: 20px;
+  }
+
+  .sectionThreeFlex img,
+.sectionThreeFlex .textContaier {
+    width: 100%;
+  }
+
+  .first {
+    -webkit-box-shadow: 20px 20px 0 0 #68b0c1;
+            box-shadow: 20px 20px 0 0 #68b0c1;
+  }
+
+  .third {
+    -webkit-box-shadow: 20px 20px 0 0 #b9dde7;
+            box-shadow: 20px 20px 0 0 #b9dde7;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin-top: 0;
+  }
+
+  .fourth button {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+
+  .imgOneShadow,
+.imgTwoShadow {
+    visibility: hidden;
+  }
+
+  .sectionThreeFlex .textContainer {
+    width: 100%;
+    padding: 50px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+
+  .sectionFourFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sectionFourFlex img {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .gallery {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gallery img {
+    width: 60%;
+    margin-right: 0;
+  }
+
+  .sectionFourText {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .gallery img:nth-child(2) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .wrapper {
+    width: 400px;
+  }
+
+  .recentPost {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .recentPost ul li {
+    width: 100%;
+  }
+
+  .asideSection .aboutHarper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .asideSection .aboutHarper img {
+    width: 40%;
+    margin-right: 0;
+  }
+
+  .headerImg {
+    width: 60%;
+  }
+
+  .title {
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  .wrapper {
+    width: 320px;
+  }
+
+  .mainSectionOne {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .title h1 {
+    font-size: 4rem;
+  }
+
+  .contactHeader h1 {
+    font-size: 3rem;
+  }
+
+  .sectionFourText {
+    width: 100%;
+  }
+}
